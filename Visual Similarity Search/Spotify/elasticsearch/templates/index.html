@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/" method="post" autocomplete="off">
+    <label for="q">search here : </label><input type="text" name="q" id="q" value="{{q}}">
+    <input type="submit" value="search">
+
+
+<ol>
+    <!--{{response}}-->
+    {% for resp in response %}
+    <li>
+        <a href = "resp._source.url"> {{resp._source.similar_pi}} </a>
+    </li>
+    {% endfor %}
+</ol>
+</form>
+</body>
+</html>
