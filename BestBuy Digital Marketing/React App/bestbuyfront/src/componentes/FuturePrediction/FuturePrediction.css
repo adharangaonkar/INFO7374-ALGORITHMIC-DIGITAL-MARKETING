@@ -1,0 +1,9 @@
+.button_text {
+  margin-left: 10px;
+}
+
+.button_text {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
